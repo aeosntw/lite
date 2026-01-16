@@ -36,7 +36,6 @@
       50% { opacity: 0.8; }
     }
     
-    /* New CSS for the spinner */
     @keyframes spin {
       from { transform: rotate(0deg); }
       to { transform: rotate(360deg); }
@@ -335,7 +334,6 @@ async function fetchAndPopulateDropdown() {
     launchButton.disabled = false;
     searchInput.disabled = false;
 
-    // Trigger the success green flash
     containerElement.classList.remove('bg-red-900', 'text-red-300');
     containerElement.classList.add('bg-success');
     
@@ -343,7 +341,6 @@ async function fetchAndPopulateDropdown() {
       containerElement.classList.remove('bg-success');
       containerElement.classList.add('bg-gray-800', 'text-gray-100');
       
-      // Update the status text with your requested phrase
       statusElement.textContent = `Loaded ${allOptions.length} games.`;
       
       hideLoadingScreen();
